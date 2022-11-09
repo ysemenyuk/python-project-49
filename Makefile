@@ -12,3 +12,6 @@ build:
 
 publish:
 	poetry publish --dry-run
+
+make lint:
+	poetry run flake8 brain_games
