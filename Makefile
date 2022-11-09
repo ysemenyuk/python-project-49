@@ -4,8 +4,14 @@ install:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
+package-reinstall:
+	python3 -m pip install --user dist/*.whl --force-reinstall
+
 brain-games:
 	poetry run brain-games
+
+brain-even:
+	poetry run brain-even
 
 build:
 	poetry build
