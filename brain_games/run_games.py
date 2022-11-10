@@ -1,23 +1,19 @@
 import prompt
-import random
 
 
-def is_even(num):
-    return num % 2 == 0
-
-
-def even_game():
+def run_game(greeting, get_round_data):
     name = prompt.string('May I have your name? ')
-    print(f'Helloooooo, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print(f'Hellaaaaa, {name}!')
+    print(greeting)
 
+    max_runds = 3
     correct_answers = 0
 
-    while correct_answers < 3:
-        num = random.randint(1, 21)
-        print(f'Question: {num}')
+    while correct_answers < max_runds:
+        question, answer = get_round_data()
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
-        answer = 'yes' if is_even(num) else 'no'
+
         if user_answer == answer:
             print('Correct!')
             correct_answers += 1
