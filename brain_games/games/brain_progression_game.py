@@ -1,6 +1,6 @@
-import math
 from brain_games.run_games import run_game
 from brain_games.utils import getRandomInt
+
 
 greeting = 'What number is missing in the progression?'
 
@@ -21,7 +21,7 @@ def get_data():
 
     progression[missing_num_index] = '..'
     question = f'{" ".join([str(i) for i in progression])}'
-    
+
     return (question, answer)
 
 
