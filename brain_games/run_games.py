@@ -3,7 +3,7 @@ import prompt
 
 def run_game(greeting, get_round_data):
     name = prompt.string('May I have your name? ')
-    print(f'Hellaaaaa, {name}!')
+    print(f'Hello, {name}!')
     print(greeting)
 
     max_runds = 3
