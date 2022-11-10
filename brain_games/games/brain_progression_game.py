@@ -14,7 +14,7 @@ def makeRandomProgression(length=7):
 
 def get_data():
     progression = makeRandomProgression()
-    missing_num_index = getRandomInt(0, len(progression))
+    missing_num_index = getRandomInt(0, len(progression) - 1)
 
     missing_num = progression[missing_num_index]
     answer = str(missing_num)
