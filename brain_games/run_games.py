@@ -18,7 +18,10 @@ def run_game(greeting, get_round_data):
             print('Correct!')
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+            # linter: line too long (88 > 80 characters)
+            path1 = f"'{user_answer}' is wrong answer ;(."
+            path2 = f"Correct answer was '{answer}'."
+            print(path1, path2)
             print(f"Let's try again, {name}!")
             return
 
